@@ -1,0 +1,64 @@
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-container .cards {
+  background-color: #171b20;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 7px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container .cards:hover .card-over {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.card-container .title {
+  color: #ACE0F9;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.card-container img {
+  width: 400px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.card-container img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.card-container .card-over {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  padding: 1rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+/*# sourceMappingURL=Main.css.map */
